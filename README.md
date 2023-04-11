@@ -21,7 +21,7 @@ Users can follow instructions here to use data and generate experiment results. 
   
     5G data: Run command ```$ python $SRC/conn_time_5g.py $DATA/{att,tmobile,verizon}/{A,V,T}_instances.csv```
     
-    HST data: Download data file from XXX, and then unzip it into any folder. Assume the data folder is $hst_data. Then run command ```$ find $hst_data -type f | xargs -I {} python conn_time_hst.py {} $DATA/HST/enb_dict_hst.txt```
+    HST data: Download data file from XXX, and then unzip it into any folder. Assume the data folder is $hst_data. Then run command ```$ find $hst_data -type f | xargs -I {} python $SRC/conn_time_hst.py {} $DATA/HST/enb_dict_hst.txt```
   
   - (b) Perform different operatons for for 5G and HST data respectively:
     
