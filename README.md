@@ -11,7 +11,7 @@ Users can follow instructions here to use data and generate experiment results. 
   
   ```$ python $SRC/measurement_time.py $DATA/{att,tmobile,verizon}/{A,V,T}_instances.csv {A,T,V}```
 
-  - (e): Download data file from XXX, and then unzip it into any folder. Assume the data folder is $hst_data. Run command:
+  - (e): Download [HST dataset](http://mssn3.cs.purdue.edu/350.zip), and then unzip it into any folder. Assume the data folder is $hst_data. Run command:
   
   ```$ find $hst_data -type f | xargs -I {} python $SRC/measurement_time_hst.py {} $DATA/HST/enb_dict_hst.txt```
 
@@ -21,13 +21,13 @@ Users can follow instructions here to use data and generate experiment results. 
   
     5G data: Run command ```$ python $SRC/conn_time_5g.py $DATA/{att,tmobile,verizon}/{A,V,T}_instances.csv```
     
-    HST data: Download data file from XXX, and then unzip it into any folder. Assume the data folder is $hst_data. Then run command ```$ find $hst_data -type f | xargs -I {} python $SRC/conn_time_hst.py {} $DATA/HST/enb_dict_hst.txt```
+    HST data: Download data file from [HST dataset](http://mssn3.cs.purdue.edu/350.zip), and then unzip it into any folder. Assume the data folder is $hst_data. Then run command ```$ find $hst_data -type f | xargs -I {} python $SRC/conn_time_hst.py {} $DATA/HST/enb_dict_hst.txt```
   
   - (b) Perform different operatons for for 5G and HST data respectively:
     
     5G data: Run command ```$ python $SRC/measurement_report.py $DATA/{att,tmobile,verizon}/{A,V,T}_instances.csv {A,T,V}```
     
-    HST data: Download data file from XXX, and then unzip it into any folder. Assume the data folder is $hst_data. Then run command ```$ find $hst_data -type f | xargs -I {} python $SRC/signaling_hst.py {} $DATA/HST/enb_dict_hst.txt```
+    HST data: Download data file from [HST dataset](http://mssn3.cs.purdue.edu/350.zip), and then unzip it into any folder. Assume the data folder is $hst_data. Then run command ```$ find $hst_data -type f | xargs -I {} python $SRC/signaling_hst.py {} $DATA/HST/enb_dict_hst.txt```
 
 
 - Figure 12
