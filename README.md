@@ -11,7 +11,7 @@ Users can follow instructions here to use data and generate experiment results. 
   
   ```$ python $SRC/measurement_time.py $DATA/{att,tmobile,verizon}/{A,V,T}_instances.csv {A,T,V}```
 
-  - (e): Download [HST dataset](http://mssn3.cs.purdue.edu/350.zip), and then unzip it into any folder. Assume the data folder is $hst_data. Run command:
+  - (e): Download [HST dataset](http://mssn3.cs.purdue.edu/350.zip)[1], and then unzip it into any folder. Assume the data folder is $hst_data. Run command:
   
   ```$ find $hst_data -type f | xargs -I {} python $SRC/measurement_time_hst.py {} $DATA/HST/enb_dict_hst.txt```
 
@@ -21,13 +21,13 @@ Users can follow instructions here to use data and generate experiment results. 
   
     5G data: Run command ```$ python $SRC/conn_time_5g.py $DATA/{att,tmobile,verizon}/{A,V,T}_instances.csv```
     
-    HST data: Download data file from [HST dataset](http://mssn3.cs.purdue.edu/350.zip), and then unzip it into any folder. Assume the data folder is $hst_data. Then run command ```$ find $hst_data -type f | xargs -I {} python $SRC/conn_time_hst.py {} $DATA/HST/enb_dict_hst.txt```
+    HST data: Download data file from [HST dataset](http://mssn3.cs.purdue.edu/350.zip)[1], and then unzip it into any folder. Assume the data folder is $hst_data. Then run command ```$ find $hst_data -type f | xargs -I {} python $SRC/conn_time_hst.py {} $DATA/HST/enb_dict_hst.txt```
   
   - (b) Perform different operatons for for 5G and HST data respectively:
     
     5G data: Run command ```$ python $SRC/measurement_report.py $DATA/{att,tmobile,verizon}/{A,V,T}_instances.csv {A,T,V}```
     
-    HST data: Download data file from [HST dataset](http://mssn3.cs.purdue.edu/350.zip), and then unzip it into any folder. Assume the data folder is $hst_data. Then run command ```$ find $hst_data -type f | xargs -I {} python $SRC/signaling_hst.py {} $DATA/HST/enb_dict_hst.txt```
+    HST data: Download data file from [HST dataset](http://mssn3.cs.purdue.edu/350.zip)[1], and then unzip it into any folder. Assume the data folder is $hst_data. Then run command ```$ find $hst_data -type f | xargs -I {} python $SRC/signaling_hst.py {} $DATA/HST/enb_dict_hst.txt```
 
 
 - Figure 12
@@ -61,3 +61,6 @@ Users can follow instructions here to use data and generate experiment results. 
   - To disable 5G cells
     - Run command e.g.
       ```$ python $SRC/tune_policy_disable_nr.py  $DATA/verizon/V-C1_grid_cell_set_ca_em_0405-1226.csv $DATA/verizon/V-C1_rss_cell_0405-0127_311480_0.0005_0_0.csv $DATA/verizon/V-C1_grid_cellset_performance_cfg.csv {output}```
+      
+      
+[1] Processed raw modem traces and generated text logs for the original dataset from Wang, Jing, et al. "An active-passive measurement study of tcp performance over lte on high-speed rails." The 25th Annual International Conference on Mobile Computing and Networking. 2019.
