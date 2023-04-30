@@ -5,6 +5,8 @@ In this repo, we release datasets and analysis code for experiments.
 ## Instructions
 
 Users can follow instructions here to use data and generate experiment results. We have ```$DATA=./dataset``` and ```$SRC=./code```.
+  
+### Evaluation with real-world datasets
 
 - Figure 10:
   - (a)-(d): Run the following command to get results. Note that city is recognized by column "region" in the file, as we have ATT: R1-C1, R3-C2; T-Mobile: R12-C1; Verizon: R6-C1
@@ -61,6 +63,10 @@ Users can follow instructions here to use data and generate experiment results. 
   - To disable 5G cells
     - Run command e.g.
       ```$ python $SRC/tune_policy_disable_nr.py  $DATA/verizon/V-C1_grid_cell_set_ca_em_0405-1226.csv $DATA/verizon/V-C1_rss_cell_0405-0127_311480_0.0005_0_0.csv $DATA/verizon/V-C1_grid_cellset_performance_cfg.csv {output}```
+      
+### Code for inter-channel wireless quality inference
+
+- Run ```main.m``` to get recovery error with CA++
       
       
 [1] Processed raw modem traces and generated text logs for the original dataset from Wang, Jing, et al. "An active-passive measurement study of tcp performance over lte on high-speed rails." The 25th Annual International Conference on Mobile Computing and Networking. 2019.
