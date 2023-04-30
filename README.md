@@ -66,7 +66,7 @@ Users can follow instructions here to use data and generate experiment results. 
       
 ### Code for inter-channel wireless quality inference
 
-- Run ```main.m``` to get recovery error with CA++
+- Run ```$SRC/inference/main.m``` to get recovery error with CA++
       
       
 [1] Processed raw modem traces and generated text logs for the original dataset from Wang, Jing, et al. "An active-passive measurement study of tcp performance over lte on high-speed rails." The 25th Annual International Conference on Mobile Computing and Networking. 2019.
